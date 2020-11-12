@@ -1,4 +1,4 @@
-# Mautic Cold Mail Template
+# [Free Mautic Cold Mail Template](https://metodoviral.com/mautic-cold-mail-template)
 
 ## Description
 
@@ -24,4 +24,4 @@ Faça o download do [arquivo zip](https://escale.me/mautic-cold-mail-template-gi
 
 Acompanhe nossas redes: [LinkedIn](https://escale.me/in-metodo) | [Facebook](https://escale.me/fb-metodo) | [Instagram](https://escale.me/ig-metodo)
 
-Desenvolvido por [Daniel Oliveira](https://escale.me/in-daniel)
+Desenvolvido por [Daniel Oliveira](https://escale.me/in-daniel).
