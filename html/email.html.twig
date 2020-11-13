@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{subject}</title>
+  <style type="text/css">
+    body {
+      font-family: 'Tahoma'; 
+      padding: 15px;
+      font-size: 12px;
+      width: 100%;
+    }
+    p, span, h4 {
+      font-size: 12px;
+    }
+    img {
+      margin: 6px;
+    }
+    .cold-mail {
+      min-height: 30px;
+      float: left;
+      width: 100%;
+      height: 150px;
+    }
+    .linha-cold-mail:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .cold-mail.esquerda {
+      width: 18%;
+    }
+    .cold-mail.direita {
+      width: 60%;
+    }
+    hr {
+      margin: 21px 0;
+      margin-right: 70%;
+    }
+    .rodape {
+      margin-top: 6px;
+    }
+    .rodape p, .rodape h4, .cold-mail h4, .cold-mail p, h4 {
+      padding: 0;
+      margin: 0;
+    }
+    .descadastrar {
+      font-size: 9px;
+    }
+    a, .descadastrar a {ß
+      color: #47558F;
+    }
+    @media only screen and (max-width: 480px){
+      table, p, a, ul, ol, li { font-size: 12px!important; }
+      a { font-size: 15px !important; }
+      h1 { font-size: 24px !important; font-weight: bold; }
+      h2 { font-size: 21px !important; font-weight: bold; }
+      h3 { font-size: 18px !important; font-weight: bold; }
+      h4 { font-size: 15px !important; font-weight: bold; }
+    }
+    @media screen and (max-width: 600px) {
+      .cold-mail {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div data-section-wrapper="1">
+    <table data-section="1" style="width: 100%;" width="80%" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <div data-slot-container="1" style="min-height: 30px; margin-top: 6px;">
+              <div data-slot="text">
+                <h4>Olá {contactfield=firstname}, tudo bem?</h4>
+                <p>Aqui você insere o conteúdo do seu email.</p>
+                <p>Os links ficam <a href="#">com este estilo</a>.</p>
+                <p>Agora você está habilitado a enviar emails em massa, com um design de emails pessoais, simulando abordagens diretas, feitas em volume de forma super personalizada. :)</p>
+                <p>Espero que goste do tema!</p>
+                <p>Um Abraço. </p>
+              </div>
+            </div>
+            <hr>
+            <div data-slot-container="1" class="linha-cold-mail">
+              <div class="cold-mail">
+                <div data-slot="image" class="cold-mail esquerda">
+                  <a href="#" target="_blank">
+                    <img src="{{ getAssetUrl('themes/'~template~'/img/logo.jpg', null, null, true) }}" width="150" height="150" alt="logo" />
+                  </a>
+                </div>
+                <div data-slot="text" class="cold-mail direita">
+                  <h4>Nome/Equipe de Marketing</h4>
+                  <p>Cargo</p>
+                  <p><a href="mailto:contato@empresa.com.br" alt="email">Email</a></p>
+                </div>
+              </div>
+            </div>
+            <div data-slot-container="1" class="rodape">
+              <div data-slot="text">
+                <h4>Empresa</h4>
+                <p>Slogan/Site</p>
+                <p>Endereço</p>
+                <p>Cidade</p>
+              </div>
+            </div>
+            <div data-slot-container="1" style="min-height: 30px;">
+              <div data-slot="text">
+                <p>Acompanhe as novidades da Empresa nas mídias sociais:</p>
+              </div>
+            </div>
+            <div data-slot-container="1" style="min-height: 30px;">
+              <div data-slot="text">
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/facebook.jpg', null, null, true) }}" alt="facebook" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/instagram.jpg', null, null, true) }}" alt="instagram" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/linkedin.jpg', null, null, true) }}" alt="linkedin" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/youtube.jpg', null, null, true) }}" alt="youtube" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/whatsapp.jpg', null, null, true) }}" alt="whatsapp" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/twitter.jpg', null, null, true) }}" alt="twitter" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/pinterest.jpg', null, null, true) }}" alt="pinterest" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/skype.jpg', null, null, true) }}" alt="skype" width="45" height="45"></a>
+                <a href="#" target="_blank"><img src="{{ getAssetUrl('themes/'~template~'/img/vimeo.jpg', null, null, true) }}" alt="vimeo" width="45" height="45"></a>
+                <br>
+              </div>
+            </div>
+            <div data-slot-container="1" style="min-height: 30px;">
+              <div data-slot="text" class="descadastrar" style="font-size: 9px;">
+                {unsubscribe_text} | {webview_text}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
